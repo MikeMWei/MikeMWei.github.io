@@ -1,0 +1,99 @@
+/* MMW's css*/
+body{font-family: Helvetica,Arial,sans-serif;}
+
+p {font-size: 16px;}
+
+H1 {font-size: 19px;}
+
+H2 {font-size: 17px;}
+
+ul {font-size: 16px;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 177px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+  
+.sidebar a {
+	display: block;
+	color: black;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-decoration: none;
+}
+   
+.sidebar a.active {
+	background-color: #666666;
+	color: white;
+}
+  
+.sidebar a:hover:not(.active) {
+	background-color: #aaaaaa;
+	color: white;
+}
+  
+div.content {
+	margin-left: 177px;
+	padding: 1px 16px;
+	height: 280px;
+	line-height: 21px;
+}
+  
+@media screen and (max-width: 800px) {
+	.sidebar {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+	.sidebar a {float: left;}
+	div.content {margin-left: 0;}
+}
+  
+@media screen and (max-width: 400px) {
+	.sidebar a {
+	  text-align: center;
+	  float: none;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	img.ri {
+	  max-width: 100%;
+	  float: top;
+	}
+}
+  
+@media screen and (min-width: 800px) {
+	img.ri {
+	  max-width: 100%;
+	  float: left;
+	}
+}
+
+
+hr.style1{
+	border-top: 2px solid #aaaaaa;
+}
+
+hr.style2 {
+	border-top: 5px double #aaaaaa;
+}
+
+
+
+
+
